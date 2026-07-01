@@ -1,0 +1,4 @@
+@import "tailwindcss";
+
+/* Tailwind v4-কে ক্লাস-ভিত্তিক ডার্ক মোড চেনানোর জন্য নিচের লাইনটি অবশ্যই লাগবে */
+@variant dark (&:where(.dark, .dark *));
