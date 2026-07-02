@@ -61,7 +61,7 @@ export const projectsData = [
     challengesText:
       "Creating interactive diagrams with limited resources and optimizing load speeds.",
     learned:
-      "Improved skills in interactive UI design and state management in React.",
+      "Improved skills in interactive UI design and state management in Reacts.",
     liveLink: "https://example.com/amaderpathshala",
     githubLink: "https://github.com/yourusername/amaderpathshala",
   },
