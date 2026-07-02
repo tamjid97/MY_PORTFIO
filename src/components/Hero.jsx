@@ -92,7 +92,7 @@ export default function Hero() {
               <span>Message Me</span>
             </a>
             <a
-              href="/Resume.pdf"
+              href="../assets/imgs/S_M_Tamjid_Hossain_Resume.pdf"
               download="SM_Tamjid_Hossain_Resume.pdf"
               className="group relative inline-flex items-center gap-2 px-8 py-3.5 rounded-full bg-white dark:bg-transparent border-2 border-purple-200 dark:border-purple-500/40 text-purple-700 dark:text-gray-200 font-bold text-sm hover:bg-purple-50 dark:hover:text-white dark:hover:bg-purple-900/20 transition-all duration-300 transform hover:-translate-y-1 shadow-sm"
             >
