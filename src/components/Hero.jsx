@@ -92,8 +92,8 @@ export default function Hero() {
               <span>Message Me</span>
             </a>
             <a
-              href="../assets/imgs/S_M_Tamjid_Hossain_Resume.pdf"
-              download="SM_Tamjid_Hossain_Resume.pdf"
+              href="/public/S_M_Tamjid_Hossain_Resume.pdf"
+              download="S_M_Tamjid_Hossain_Resume.pdf"
               className="group relative inline-flex items-center gap-2 px-8 py-3.5 rounded-full bg-white dark:bg-transparent border-2 border-purple-200 dark:border-purple-500/40 text-purple-700 dark:text-gray-200 font-bold text-sm hover:bg-purple-50 dark:hover:text-white dark:hover:bg-purple-900/20 transition-all duration-300 transform hover:-translate-y-1 shadow-sm"
             >
               <svg className="w-5 h-5 fill-current text-purple-500 dark:text-purple-400 transition-transform group-hover:-translate-y-0.5" viewBox="0 0 24 24"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
