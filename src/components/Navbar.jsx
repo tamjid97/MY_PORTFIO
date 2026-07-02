@@ -1,11 +1,15 @@
 import { useState, useEffect } from 'react';
 import { Menu, X, Moon, Sun } from 'lucide-react';
+import { useNavigate, useLocation } from 'react-router-dom';
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const [darkMode, setDarkMode] = useState(true);
   const [activeMenu, setActiveMenu] = useState('Skills');
+
+  const navigate = useNavigate();
+  const location = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -29,14 +33,48 @@ function Navbar() {
 
   const menuItems = [
     { name: 'About Me', href: '#about' },
-  
     { name: 'Skills', href: '#skills' },
     { name: 'Education', href: '#education' },
     { name: 'Certification', href: '#certification' },
-    
     { name: 'Projects', href: '#projects' },
     { name: 'Contact', href: '#contact' },
   ];
+
+  // রাউটিং এবং স্মুথ স্ক্রলিংয়ের জন্য কাস্টম ফাংশন
+  const handleNavigation = (e, href, name) => {
+    e.preventDefault();
+    setActiveMenu(name);
+    setIsOpen(false);
+
+    const targetId = href.replace('#', '');
+
+    // যদি ইউজার অন্য পেজে থাকে (যেমন: Project Details)
+    if (location.pathname !== '/') {
+      navigate('/' + href);
+      setTimeout(() => {
+        const element = document.getElementById(targetId);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 300);
+    } else {
+      // ইউজার হোম পেজেই থাকলে সরাসরি স্ক্রল হবে
+      const element = document.getElementById(targetId);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+        window.history.pushState(null, '', '/' + href);
+      }
+    }
+  };
+
+  const handleLogoClick = () => {
+    setActiveMenu('');
+    if (location.pathname !== '/') {
+      navigate('/');
+    } else {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  };
 
   return (
     <nav className={`fixed top-4 left-1/2 -translate-x-1/2 w-[calc(100%-2rem)] max-w-7xl z-50 transition-all duration-500 rounded-full border ${
@@ -47,8 +85,11 @@ function Navbar() {
       <div className="w-full px-6 sm:px-8">
         <div className="flex items-center justify-between h-11">
           
-          {/* লোগো: লাইট মোডে কুচকুচে কালো (text-black font-black) এবং ডার্ক মোডে সেই প্রিমিয়াম বেগুনি */}
-          <div className="text-[19px] font-black text-black dark:text-violet-500 tracking-wide cursor-pointer select-none">
+          {/* লোগো: লাইট মোডে কুচকুচে কালো (text-black font-black) এবং ডার্ক মোডে সেই প্রিমিয়াম বেগুনি */}
+          <div 
+            onClick={handleLogoClick}
+            className="text-[19px] font-black text-black dark:text-violet-500 tracking-wide cursor-pointer select-none"
+          >
             Epick.Dev
           </div>
 
@@ -60,7 +101,7 @@ function Navbar() {
                 <a 
                   key={item.name} 
                   href={item.href}
-                  onClick={() => setActiveMenu(item.name)}
+                  onClick={(e) => handleNavigation(e, item.href, item.name)}
                   className={`relative px-3 py-1.5 rounded-full transition-all duration-300 ${
                     isActive 
                       ? 'text-black dark:text-white font-bold' 
@@ -109,10 +150,7 @@ function Navbar() {
               <a 
                 key={item.name} 
                 href={item.href} 
-                onClick={() => {
-                  setActiveMenu(item.name);
-                  setIsOpen(false);
-                }}
+                onClick={(e) => handleNavigation(e, item.href, item.name)}
                 className={`block px-4 py-2 rounded-full transition-colors ${
                   isActive 
                     ? 'bg-black/10 dark:bg-violet-600/20 text-black dark:text-white font-bold text-center' 
