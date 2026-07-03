@@ -32,8 +32,8 @@ export const projectsData = [
       "Optimizing real-time data flow and ensuring mobile-responsiveness for low-end devices.",
     learned:
       "Deepened my understanding of full-stack architecture and secure user authentication.",
-    liveLink: "https://example.com/loanlink",
-    githubLink: "https://github.com/yourusername/loanlink",
+    liveLink: "https://lonelink-d3167.web.app/",
+    githubLink: "https://github.com/tamjid97/loanlink.git",
   },
   {
     id: "2",
@@ -62,8 +62,8 @@ export const projectsData = [
       "Creating interactive diagrams with limited resources and optimizing load speeds.",
     learned:
       "Improved skills in interactive UI design and state management in Reacts.",
-    liveLink: "https://example.com/amaderpathshala",
-    githubLink: "https://github.com/yourusername/amaderpathshala",
+    liveLink: "https://amaderpathshala-21244.web.app/",
+    githubLink: "https://github.com/tamjid97/amader_pathshala.git",
   },
   {
     id: "3",
@@ -91,7 +91,7 @@ export const projectsData = [
       "Managing database scalability for thousands of products and ensuring data security.",
     learned:
       "Gained hands-on experience with MongoDB aggregation pipelines and secure API development.",
-    liveLink: "https://example.com/krishilink",
-    githubLink: "https://github.com/yourusername/krishilink",
+    liveLink: "https://krishilnk.web.app/",
+    githubLink: "https://github.com/tamjid97/Krishilink-clintsite.git",
   },
 ];
