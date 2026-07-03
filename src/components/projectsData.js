@@ -1,7 +1,7 @@
 // src/constants/projectsData.js
-import img1 from "../assets/imgs/p1.jpg";
+import img1 from "../assets/imgs/im1.jpg";
 import img2 from "../assets/imgs/pp2.png";
-import img5 from "../assets/imgs/6im.jpg";
+import img5 from "../assets/imgs/p1.jpg";
 import img6 from "../assets/imgs/1752507510777.jpg";
 
 export const projectsData = [
