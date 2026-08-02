@@ -1,7 +1,19 @@
 import React, { useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { FaGithub, FaExternalLinkAlt, FaArrowLeft, FaCheckCircle, FaLightbulb, FaRocket, FaTasks, FaGraduationCap, FaBook } from 'react-icons/fa';
+import { 
+  FaGithub, 
+  FaExternalLinkAlt, 
+  FaArrowLeft, 
+  FaCheckCircle, 
+  FaLightbulb, 
+  FaRocket, 
+  FaTasks, 
+  FaGraduationCap, 
+  FaBook, 
+  FaYoutube,
+  FaTools // নতুন আইকন ইম্পোর্ট করা হয়েছে 'Building' এর জন্য
+} from 'react-icons/fa';
 import * as SiIcons from 'react-icons/si';
 import { projectsData } from '../components/projectsData'; 
 
@@ -87,14 +99,25 @@ const ProjectDetails = () => {
 
           {/* Action Buttons */}
           <div className="flex flex-wrap gap-4 mt-12 pt-8 border-t border-slate-200 dark:border-white/10">
-            <a 
-              href={project.liveLink} 
-              target="_blank" 
-              rel="noreferrer"
-              className="flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-500 hover:to-pink-500 rounded-xl font-bold text-white shadow-lg shadow-purple-500/30 transition-all transform hover:-translate-y-1"
-            >
-              <FaExternalLinkAlt /> Live Demo
-            </a>
+            
+            {/* Conditional Live Demo Button */}
+            {project.liveLink ? (
+              <a 
+                href={project.liveLink} 
+                target="_blank" 
+                rel="noreferrer"
+                className="flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-500 hover:to-pink-500 rounded-xl font-bold text-white shadow-lg shadow-purple-500/30 transition-all transform hover:-translate-y-1"
+              >
+                <FaExternalLinkAlt /> Live Demo
+              </a>
+            ) : (
+              <div 
+                className="flex items-center gap-2 px-8 py-4 bg-slate-100 dark:bg-white/5 border-2 border-dashed border-slate-300 dark:border-gray-600 rounded-xl font-bold text-slate-500 dark:text-gray-400 cursor-not-allowed select-none"
+              >
+                <FaTools className="animate-bounce" /> Building...
+              </div>
+            )}
+            
             <a 
               href={project.githubLink} 
               target="_blank" 
@@ -103,6 +126,18 @@ const ProjectDetails = () => {
             >
               <FaGithub size={20} /> GitHub Code
             </a>
+
+            {/* YouTube Video Button (Conditional) */}
+            {project.youtubeLink && (
+              <a 
+                href={project.youtubeLink} 
+                target="_blank" 
+                rel="noreferrer"
+                className="flex items-center gap-2 px-8 py-4 bg-red-600 hover:bg-red-500 rounded-xl font-bold text-white shadow-lg shadow-red-500/30 transition-all transform hover:-translate-y-1"
+              >
+                <FaYoutube size={20} /> Watch Video
+              </a>
+            )}
           </div>
 
         </motion.div>
@@ -111,9 +146,9 @@ const ProjectDetails = () => {
   );
 };
 
-// Helper Component for Sections (Updated for Light/Dark Mode)
+// Helper Component for Sections
 const Section = ({ icon, title, content }) => {
-  if (!content) return null; // কন্টেন্ট না থাকলে সেকশন দেখাবে না
+  if (!content) return null; 
   return (
     <div className="mb-6">
       <h3 className="font-bold text-xl text-slate-900 dark:text-white mb-3 flex items-center gap-2">
