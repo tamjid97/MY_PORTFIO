@@ -110,7 +110,7 @@ export const projectsData = [
     "Implementing strict 3-tier Role-Based Access Control (RBAC), managing secure PDF file handling, and handling real-time state synchronization during online exams.",
   learned:
     "Mastered Role-Based Access Control (RBAC) patterns, file handling workflows, online exam timer logic, and complex state management in React/Next.js.",
-
+    liveLink: "https://rootsofbiology.vercel.app",
     githubLink: "https://github.com/tamjid97/Amader-Patshala-Fontand-v2.git",
     
 },
