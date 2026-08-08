@@ -1,44 +1,50 @@
 // src/constants/projectsData.js
 import img1 from "../assets/imgs/retnest.png";
-import img2 from "../assets/imgs/amader patshala,v1.png";
-import img5 from "../assets/imgs/amederfd.png";
+import img2 from "../assets/imgs/mmmmmmmmmmm.png";
+import img3 from "../assets/imgs/iconfaction.png";
 import img6 from "../assets/imgs/1752507510777.jpg";
 
 export const projectsData = [
-{
-  id: "3",
-  title: "📑 AmaderPathshala",
-  image: img5,
+  {
+  id: "2",
+  title: "🧬 Roots of biology",
+  image: img2,
   shortDesc:
-    "A client-side biology learning portal providing students with interactive topic guides and instant PDF study material downloads.",
+    "Comprehensive biology LMS featuring 3-tier role-based access control (Admin, Moderator, Student), online exams, batch schedules, and PDF study resources.",
   longDesc:
-    "A pure frontend-based biology resource platform designed in Figma and built using React, Tailwind CSS, and Framer Motion. Powered by Firebase for client services, this application provides students with an intuitive, highly responsive interface to explore biology topics, view study guides, and directly download PDF notes without relying on a custom backend.",
+    "Roots of biology is a specialized learning management system focused on biology education. Built with a 3-tier role architecture: Admins oversee platform operations and user moderation; Moderators handle student approvals, batch timing, exam result publishing, and study material uploads; and Students access interactive diagrams, view schedules, download PDFs.",
   techStack: [
-    { name: "React", iconName: "SiReact", color: "text-[#61DAFB]" },
-    { name: "JavaScript", iconName: "SiJavascript", color: "text-[#F7DF1E]" },
+    { name: "Next.js", iconName: "SiNextdotjs", color: "text-white" },
     { name: "Tailwind CSS", iconName: "SiTailwindcss", color: "text-[#38B2AC]" },
+    { name: "TypeScript", iconName: "SiTypescript", color: "text-[#3178C6]" },
+    { name: "Prisma", iconName: "SiPrisma", color: "text-[#2D3748]" },
+    { name: "PostgreSQL", iconName: "SiPostgresql", color: "text-[#4169E1]" },
+    { name: "Shadcn UI", iconName: "SiShadcnui", color: "text-white" },
     { name: "Framer Motion", iconName: "SiFramer", color: "text-[#0055FF]" },
-    { name: "Firebase", iconName: "SiFirebase", color: "text-[#FFCA28]" },
-    { name: "Figma", iconName: "SiFigma", color: "text-[#F24E1E]" },
+    { name: "Vercel", iconName: "SiVercel", color: "text-white" },
   ],
   features: [
-    "Frontend-Only Architecture Powered by Firebase",
-    "Instant PDF Study Material & Notes Download for Students",
-    "Interactive UI & Layout Prototype Designed in Figma",
-    "Smooth UI Animations & Transitions via Framer Motion",
-    "Categorized Biology Topics & Mobile-Responsive Design",
+    "3-Tier Role-Based Access Control (Admin, Moderator, Student)",
+    "Admin Controls: Promote Moderators & Ban/Unban Users",
+    "Moderator Tools: PDF/Image Uploads & Student Approvals",
+    "Batch Schedule & Routine Management",
+    "Instant Result Publishing",
+    "Student Portal: PDF Study Material Downloads.",
   ],
   problem:
-    "Students need a lightweight, fast, and visually engaging web application to quickly browse biology concepts and download essential PDF study materials without complex navigation.",
+    "Students lack a centralized online portal to take biology exams, track batch schedules, download curated study materials, and visualize complex biology topics.",
   solution:
-    "A streamlined, pure client-side biology platform delivering instant access to structured study guides, interactive visual layouts, and one-click PDF downloads.",
+    "An all-in-one educational platform integrating interactive diagrams, automated online exams, PDF resource distribution, and automated administrative approval workflows.",
   challengesText:
-    "Building an optimized frontend-only structure, managing client-side PDF downloads efficiently, and translating Figma prototypes into fluid Framer Motion animations.",
+    "Implementing strict 3-tier Role-Based Access Control (RBAC), managing secure PDF file handling, and handling real-time state synchronization during online exams.",
   learned:
-    "Strengthened pure frontend architecture skills, masterclass in UI design using Figma, Firebase integration, and crafting interactive motion UI using Framer Motion.",
-  liveLink: "https://amaderpathshala-21244.web.app",
-  githubLink: "https://github.com/tamjid97/amader_pathshala.git",
+    "Mastered Role-Based Access Control (RBAC) patterns, file handling workflows, online exam timer logic, and complex state management in React/Next.js.",
+    liveLink: "https://roots-of-biology-pro.vercel.app",
+    githubLink: "https://github.com/tamjid97/ROOTS-OF-BIOLOGY-V2",
+    youtubeLink: "https://www.youtube.com/watch?v=dh-8Sf57l7c",
+    
 },
+
   {
     id: "1",
     title: "🏠 RentNest",
@@ -77,41 +83,37 @@ export const projectsData = [
     youtubeLink: "https://youtu.be/_ZtuveLOK4A?si=o-idrNiUKaLr8uXw",
   },
 {
-  id: "2",
-  title: "🧬 Roots of biology",
-  image: img2,
+  id: "3",
+  title: "🎨 Icon Faction",
+  image: img3, // নিশ্চিত করে নিও যে img1 টি ফাইলটি ইমপোর্ট করা আছে
   shortDesc:
-    "Comprehensive biology LMS featuring 3-tier role-based access control (Admin, Moderator, Student), online exams, batch schedules, and PDF study resources.",
+    "A specialized frontend platform for icon discovery and design, built to showcase clean UI patterns and component modularity.",
   longDesc:
-    "Roots of biology is a specialized learning management system focused on biology education. Built with a 3-tier role architecture: Admins oversee platform operations and user moderation; Moderators handle student approvals, batch timing, exam result publishing, and study material uploads; and Students access interactive diagrams, view schedules, download PDFs, and participate in online exams.",
+    "A refined React-based application focused on delivering a seamless user experience for icon management. This project demonstrates clean state management, modular component architecture, and a modern responsive interface built with React, TypeScript, and Tailwind CSS. It highlights the ability to handle dynamic data and interactive frontend elements effectively.",
   techStack: [
     { name: "Next.js", iconName: "SiNextdotjs", color: "text-white" },
     { name: "Tailwind CSS", iconName: "SiTailwindcss", color: "text-[#38B2AC]" },
-    { name: "TypeScript", iconName: "SiTypescript", color: "text-[#3178C6]" },
-    { name: "Prisma", iconName: "SiPrisma", color: "text-[#2D3748]" },
-    { name: "PostgreSQL", iconName: "SiPostgresql", color: "text-[#4169E1]" },
-    { name: "Shadcn UI", iconName: "SiShadcnui", color: "text-white" },
     { name: "Framer Motion", iconName: "SiFramer", color: "text-[#0055FF]" },
     { name: "Vercel", iconName: "SiVercel", color: "text-white" },
+
   ],
   features: [
-    "3-Tier Role-Based Access Control (Admin, Moderator, Student)",
-    "Admin Controls: Promote Moderators & Ban/Unban Users",
-    "Moderator Tools: PDF/Image Uploads & Student Approvals",
-    "Batch Schedule & Routine Management",
-    "Online Exam System & Instant Result Publishing",
-    "Student Portal: PDF Study Material Downloads & Exam Participation",
+    "Modern & Responsive UI Layouts",
+    "Dynamic Icon Rendering & Filtering",
+    "Optimized Performance & Clean Code Architecture",
+    "State Management for Interactive Elements",
+    "Cross-device Compatibility",
   ],
   problem:
-    "Students lack a centralized online portal to take biology exams, track batch schedules, download curated study materials, and visualize complex biology topics.",
+    "The need for a streamlined, performance-optimized interface to browse and interact with design assets without performance overhead.",
   solution:
-    "An all-in-one educational platform integrating interactive diagrams, automated online exams, PDF resource distribution, and automated administrative approval workflows.",
+    "A fast, client-side React application that prioritizes smooth transitions, maintainable component structure, and a highly responsive design.",
   challengesText:
-    "Implementing strict 3-tier Role-Based Access Control (RBAC), managing secure PDF file handling, and handling real-time state synchronization during online exams.",
+    "Refactoring older code to modern React standards, optimizing component re-renders for a smoother UI, and ensuring perfect responsiveness.",
   learned:
-    "Mastered Role-Based Access Control (RBAC) patterns, file handling workflows, online exam timer logic, and complex state management in React/Next.js.",
-    liveLink: "https://rootsofbiology.vercel.app",
-    githubLink: "https://github.com/tamjid97/Amader-Patshala-Fontand-v2.git",
-    
+    "Deepened understanding of React hooks, efficient component composition, modular CSS architecture, and code refactoring best practices.",
+  liveLink: "https://fason-bd.vercel.app", 
+  githubLink: "https://github.com/tamjid97/fason_bd.git", 
+
 },
 ];
