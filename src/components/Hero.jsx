@@ -107,7 +107,7 @@ export default function Hero() {
 
             {/* Facebook */}
             <a
-              href="https://www.facebook.com/"
+              href="https://www.facebook.com"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Facebook"

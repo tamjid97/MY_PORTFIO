@@ -82,9 +82,9 @@ const Contact = () => {
 
           <div className="flex gap-4 mt-6">
             {[
-              { icon: FaGithub, link: "https://github.com/epick32851" },
-              { icon: FaLinkedin, link: "https://www.linkedin.com/" },
-              { icon: FaFacebook, link: "https://facebook.com/" },
+              { icon: FaGithub, link: "https://github.com/tamjid97" },
+              { icon: FaLinkedin, link: "https://www.linkedin.com/in/epick-hero-codes" },
+              { icon: FaYoutube, link: "https://www.youtube.com/@TAMJIDHOSSAIN-c1n" }
             ].map((social, i) => (
               <motion.a
                 key={i}
