@@ -6,6 +6,7 @@ import {
   FaFacebook,
   FaWhatsapp,
   FaEnvelope,
+  FaYoutube,
 } from "react-icons/fa";
 import { MdEmail, MdPhone } from "react-icons/md";
 
