@@ -1,49 +1,11 @@
 // src/constants/projectsData.js
 import img1 from "../assets/imgs/retnest.png";
 import img2 from "../assets/imgs/mmmmmmmmmmm.png";
-import img3 from "../assets/imgs/iconfaction.png";
+import img3 from "../assets/imgs/gym.png";
 import img6 from "../assets/imgs/1752507510777.jpg";
 
 export const projectsData = [
-  {
-  id: "2",
-  title: "🧬 Roots of biology",
-  image: img2,
-  shortDesc:
-    "Comprehensive biology LMS featuring 3-tier role-based access control (Admin, Moderator, Student), online exams, batch schedules, and PDF study resources.",
-  longDesc:
-    "Roots of biology is a specialized learning management system focused on biology education. Built with a 3-tier role architecture: Admins oversee platform operations and user moderation; Moderators handle student approvals, batch timing, exam result publishing, and study material uploads; and Students access interactive diagrams, view schedules, download PDFs.",
-  techStack: [
-    { name: "Next.js", iconName: "SiNextdotjs", color: "text-white" },
-    { name: "Tailwind CSS", iconName: "SiTailwindcss", color: "text-[#38B2AC]" },
-    { name: "TypeScript", iconName: "SiTypescript", color: "text-[#3178C6]" },
-    { name: "Prisma", iconName: "SiPrisma", color: "text-[#2D3748]" },
-    { name: "PostgreSQL", iconName: "SiPostgresql", color: "text-[#4169E1]" },
-    { name: "Shadcn UI", iconName: "SiShadcnui", color: "text-white" },
-    { name: "Framer Motion", iconName: "SiFramer", color: "text-[#0055FF]" },
-    { name: "Vercel", iconName: "SiVercel", color: "text-white" },
-  ],
-  features: [
-    "3-Tier Role-Based Access Control (Admin, Moderator, Student)",
-    "Admin Controls: Promote Moderators & Ban/Unban Users",
-    "Moderator Tools: PDF/Image Uploads & Student Approvals",
-    "Batch Schedule & Routine Management",
-    "Instant Result Publishing",
-    "Student Portal: PDF Study Material Downloads.",
-  ],
-  problem:
-    "Students lack a centralized online portal to take biology exams, track batch schedules, download curated study materials, and visualize complex biology topics.",
-  solution:
-    "An all-in-one educational platform integrating interactive diagrams, automated online exams, PDF resource distribution, and automated administrative approval workflows.",
-  challengesText:
-    "Implementing strict 3-tier Role-Based Access Control (RBAC), managing secure PDF file handling, and handling real-time state synchronization during online exams.",
-  learned:
-    "Mastered Role-Based Access Control (RBAC) patterns, file handling workflows, online exam timer logic, and complex state management in React/Next.js.",
-    liveLink: "https://roots-of-biology-pro.vercel.app",
-    githubLink: "https://github.com/tamjid97/ROOTS-OF-BIOLOGY-V2",
-    youtubeLink: "https://www.youtube.com/watch?v=dh-8Sf57l7c",
-    
-},
+
 
   {
     id: "1",
@@ -82,38 +44,115 @@ export const projectsData = [
     githubLink: "https://github.com/tamjid97/RentNest_Frontend.git",
     youtubeLink: "https://youtu.be/_ZtuveLOK4A?si=o-idrNiUKaLr8uXw",
   },
-{
-  id: "3",
-  title: "🎨 Icon Faction",
-  image: img3, // নিশ্চিত করে নিও যে img1 টি ফাইলটি ইমপোর্ট করা আছে
+    {
+  id: "2",
+  title: "🧬 Roots of biology",
+  image: img2,
   shortDesc:
-    "A specialized frontend platform for icon discovery and design, built to showcase clean UI patterns and component modularity.",
+    "Comprehensive biology LMS featuring 3-tier role-based access control (Admin, Moderator, Student), online exams, batch schedules, and PDF study resources.",
   longDesc:
-    "A refined React-based application focused on delivering a seamless user experience for icon management. This project demonstrates clean state management, modular component architecture, and a modern responsive interface built with React, TypeScript, and Tailwind CSS. It highlights the ability to handle dynamic data and interactive frontend elements effectively.",
+    "Roots of biology is a specialized learning management system focused on biology education. Built with a 3-tier role architecture: Admins oversee platform operations and user moderation; Moderators handle student approvals, batch timing, exam result publishing, and study material uploads; and Students access interactive diagrams, view schedules, download PDFs.",
   techStack: [
     { name: "Next.js", iconName: "SiNextdotjs", color: "text-white" },
     { name: "Tailwind CSS", iconName: "SiTailwindcss", color: "text-[#38B2AC]" },
+    { name: "TypeScript", iconName: "SiTypescript", color: "text-[#3178C6]" },
+    { name: "Prisma", iconName: "SiPrisma", color: "text-[#2D3748]" },
+    { name: "PostgreSQL", iconName: "SiPostgresql", color: "text-[#4169E1]" },
+    { name: "Shadcn UI", iconName: "SiShadcnui", color: "text-white" },
     { name: "Framer Motion", iconName: "SiFramer", color: "text-[#0055FF]" },
     { name: "Vercel", iconName: "SiVercel", color: "text-white" },
-
   ],
   features: [
-    "Modern & Responsive UI Layouts",
-    "Dynamic Icon Rendering & Filtering",
-    "Optimized Performance & Clean Code Architecture",
-    "State Management for Interactive Elements",
-    "Cross-device Compatibility",
+    "3-Tier Role-Based Access Control (Admin, Moderator, Student)",
+    "Admin Controls: Promote Moderators & Ban/Unban Users",
+    "Moderator Tools: PDF/Image Uploads & Student Approvals",
+    "Batch Schedule & Routine Management",
+    "Instant Result Publishing",
+    "Student Portal: PDF Study Material Downloads.",
   ],
   problem:
-    "The need for a streamlined, performance-optimized interface to browse and interact with design assets without performance overhead.",
+    "Students lack a centralized online portal to take biology exams, track batch schedules, download curated study materials, and visualize complex biology topics.",
   solution:
-    "A fast, client-side React application that prioritizes smooth transitions, maintainable component structure, and a highly responsive design.",
+    "An all-in-one educational platform integrating interactive diagrams, automated online exams, PDF resource distribution, and automated administrative approval workflows.",
   challengesText:
-    "Refactoring older code to modern React standards, optimizing component re-renders for a smoother UI, and ensuring perfect responsiveness.",
+    "Implementing strict 3-tier Role-Based Access Control (RBAC), managing secure PDF file handling, and handling real-time state synchronization during online exams.",
   learned:
-    "Deepened understanding of React hooks, efficient component composition, modular CSS architecture, and code refactoring best practices.",
-  liveLink: "https://fason-bd.vercel.app", 
-  githubLink: "https://github.com/tamjid97/fason_bd.git", 
+    "Mastered Role-Based Access Control (RBAC) patterns, file handling workflows, online exam timer logic, and complex state management in React/Next.js.",
+    liveLink: "https://roots-of-biology-pro.vercel.app",
+    githubLink: "https://github.com/tamjid97/ROOTS-OF-BIOLOGY-V2",
+    youtubeLink: "https://www.youtube.com/watch?v=dh-8Sf57l7c",
+    
+},
+{
+  id: "3",
+  title: "🏋️ AHMED GYM & CAFE 29",
+  image: img3, // নিশ্চিত করে নিও যে img3 ফাইলটি import করা আছে
 
+  shortDesc:
+    "A modern and responsive frontend fitness website built with Next.js, featuring training programs, membership plans, trainer profiles, schedules, gallery, and an interactive protein calculator.",
+
+  longDesc:
+    "AHMED GYM & CAFE 29 is a modern frontend-focused fitness website designed to deliver a premium gym experience through a clean and responsive interface. Built with Next.js, the project includes dedicated sections for fitness programs, expert trainers, membership plans, weekly schedules, gallery, testimonials, contact information, and a daily protein calculator. The interface focuses on smooth interactions, responsive layouts, reusable components, and a professional fitness-oriented visual experience.",
+
+  techStack: [
+    {
+      name: "Next.js",
+      iconName: "SiNextdotjs",
+      color: "text-white",
+    },
+    {
+      name: "React",
+      iconName: "SiReact",
+      color: "text-[#61DAFB]",
+    },
+    {
+      name: "TypeScript",
+      iconName: "SiTypescript",
+      color: "text-[#3178C6]",
+    },
+    {
+      name: "Tailwind CSS",
+      iconName: "SiTailwindcss",
+      color: "text-[#38B2AC]",
+    },
+    {
+      name: "Framer Motion",
+      iconName: "SiFramer",
+      color: "text-[#0055FF]",
+    },
+    {
+      name: "Vercel",
+      iconName: "SiVercel",
+      color: "text-white",
+    },
+  ],
+
+  features: [
+    "Modern & Fully Responsive Fitness UI",
+    "Training Programs & Program Details",
+    "Gym Membership Plans & Pricing",
+    "Trainer Profiles & Expert Coaching Section",
+    "Men's & Women's Weekly Gym Schedules",
+    "Interactive Daily Protein Calculator",
+    "Gallery & Member Testimonials",
+    "Smooth Animations & Interactive UI Elements",
+    "Reusable Component-Based Architecture",
+    "Cross-device Compatibility",
+  ],
+
+  problem:
+    "The need for a modern digital platform that could present a gym's services, training programs, membership plans, trainers, schedules, and fitness resources in a clear and engaging way across different devices.",
+
+  solution:
+    "A responsive Next.js frontend that organizes the complete gym experience into dedicated sections with reusable components, modern UI patterns, smooth interactions, clear membership information, training schedules, and an interactive protein calculator.",
+
+  challengesText:
+    "Designing a premium fitness-focused interface while maintaining responsiveness across desktop, tablet, and mobile devices. Another challenge was organizing multiple sections such as programs, trainers, membership plans, schedules, gallery, testimonials, and interactive fitness tools into a consistent and easy-to-navigate user experience.",
+
+  learned:
+    "Improved understanding of Next.js frontend architecture, reusable React components, responsive Tailwind CSS layouts, animation and interaction design, component organization, and building polished user interfaces for real-world business use cases.",
+
+  liveLink: "https://gym-xi-ecru.vercel.app",
+  githubLink: "https://github.com/sabbirtanvir13/Gym.git",
 },
 ];
