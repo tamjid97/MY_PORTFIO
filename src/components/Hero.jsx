@@ -1,13 +1,13 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Typewriter } from "react-simple-typewriter";
-import profileImg from "../assets/imgs/ChatGPT Image Aug 16, 2026, 12_15_30 AM.png";
+import profileImg from "../assets/imgs/epick2222222.png";
 
 export default function Hero() {
   return (
     <section className="relative min-h-[90vh] flex items-center justify-center px-4 sm:px-6 py-12 md:py-16 overflow-hidden">
       <div className="relative max-w-6xl w-full flex flex-col-reverse md:flex-row items-center justify-between gap-10 md:gap-6 z-10">
-        {/* Left Side: Text Content */}
+        {/* ================= LEFT SIDE ================= */}
         <motion.div
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
@@ -15,6 +15,7 @@ export default function Hero() {
           className="flex-1 space-y-5 text-center md:text-left w-full mt-6 md:mt-0"
         >
           <div className="space-y-2 md:space-y-3">
+            {/* Heading */}
             <motion.h1
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -31,6 +32,7 @@ export default function Hero() {
               </span>
             </motion.h1>
 
+            {/* Typewriter */}
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
@@ -53,6 +55,7 @@ export default function Hero() {
             </motion.div>
           </div>
 
+          {/* Description */}
           <motion.p
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -63,7 +66,7 @@ export default function Hero() {
             amazing together!
           </motion.p>
 
-          {/* Premium Social Icons */}
+          {/* ================= SOCIAL ICONS ================= */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -135,13 +138,14 @@ export default function Hero() {
             </a>
           </motion.div>
 
-          {/* Action Buttons */}
+          {/* ================= ACTION BUTTONS ================= */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 1, duration: 0.6 }}
             className="pt-6 flex flex-wrap items-center justify-center md:justify-start gap-4"
           >
+            {/* Message Me */}
             <a
               href="mailto:epickhossain970@gmail.com"
               className="group relative inline-flex items-center gap-2 px-8 py-3.5 rounded-full bg-gradient-to-r from-purple-600 to-pink-600 text-white font-bold text-sm hover:from-purple-500 hover:to-pink-500 transition-all duration-300 shadow-lg shadow-purple-500/30 hover:shadow-purple-500/50 transform hover:-translate-y-1"
@@ -152,8 +156,11 @@ export default function Hero() {
               >
                 <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
               </svg>
+
               <span>Message Me</span>
             </a>
+
+            {/* Download Resume */}
             <a
               href="/S_M_Tamjid_Hossain_Resume.pdf"
               download="S_M_Tamjid_Hossain_Resume.pdf"
@@ -165,12 +172,13 @@ export default function Hero() {
               >
                 <path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z" />
               </svg>
+
               <span>Download Resume</span>
             </a>
           </motion.div>
         </motion.div>
 
-        {/* Right Side: Profile Image */}
+        {/* ================= RIGHT SIDE: PROFILE IMAGE ================= */}
         <motion.div
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
@@ -179,15 +187,53 @@ export default function Hero() {
         >
           <motion.div
             animate={{ y: [0, -15, 0] }}
-            transition={{ repeat: Infinity, duration: 5, ease: "easeInOut" }}
-            className="relative w-64 h-64 sm:w-72 sm:h-72 md:w-[350px] md:h-[350px] rounded-full p-2 bg-gradient-to-tr from-purple-500 via-pink-500 to-purple-500 shadow-2xl shadow-purple-500/20 dark:shadow-purple-500/40"
+            transition={{
+              repeat: Infinity,
+              duration: 5,
+              ease: "easeInOut",
+            }}
+            className="
+              relative
+              w-64 h-64
+              sm:w-72 sm:h-72
+              md:w-[350px] md:h-[350px]
+              rounded-full
+              p-2
+              bg-gradient-to-tr
+              from-purple-500
+              via-pink-500
+              to-purple-500
+              shadow-2xl
+              shadow-purple-500/20
+              dark:shadow-purple-500/40
+            "
           >
-            <div className="w-full h-full rounded-full overflow-hidden bg-white dark:bg-[#0b0f19] border-[6px] border-white dark:border-[#0b0f19]">
-<img
-  src={profileImg}
-  alt="SM Tamjid Hossain Epick"
-  className="w-full h-full object-cover object-[center_15%] scale-125 hover:scale-150 transition-transform duration-700"
-/>
+            {/* Inner Image Container */}
+            <div
+              className="
+                w-full
+                h-full
+                rounded-full
+                overflow-hidden
+                bg-[#0b0f19]
+                border-[6px]
+                border-[#0b0f19]
+              "
+            >
+              <img
+                src={profileImg}
+                alt="SM Tamjid Hossain Epick"
+                className="
+                  w-full
+                  h-full
+                  object-cover
+                  object-[center_18%]
+                  scale-100
+                  hover:scale-105
+                  transition-transform
+                  duration-700
+                "
+              />
             </div>
           </motion.div>
         </motion.div>
